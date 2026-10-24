@@ -1,0 +1,7 @@
+Evaluating a RAG System
+
+Retrieval and generation should be evaluated separately. Retrieval metrics describe whether the right passages were found. Generation metrics describe whether the final answer is good.
+
+Precision@k measures how many of the top k retrieved passages are relevant. For example, if 3 of the 4 retrieved passages are relevant, Precision@4 is 0.75. Recall@k measures how many of all the relevant passages were retrieved within the top k results.
+
+Answer relevance checks whether the response actually answers the user's question. Faithfulness checks whether every claim in the answer is supported by the retrieved context. A response can be relevant but unfaithful if the model adds facts that are not in the sources. Evaluation is usually done with a set of known questions and expected sources, combined with manual review or an LLM-based judge.

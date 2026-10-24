@@ -1,0 +1,7 @@
+Northstar Analytics Support Handbook (fictional company)
+
+Northstar Analytics is a fictional company used only for this demonstration. Its customer support team is available Monday to Friday, from 9:00 AM to 6:00 PM India Standard Time. Support is closed on national holidays.
+
+Customers can reach support through the help portal, by email at support@northstar-analytics.example, or by phone. Standard tickets receive a first response within 8 business hours. Priority tickets, for outages that block all users, receive a first response within 1 hour.
+
+Refund requests must be submitted within 30 days of purchase. Annual plans can be upgraded at any time, and the price difference is calculated on a pro-rata basis. Data exports are available in CSV and JSON format from the account settings page.

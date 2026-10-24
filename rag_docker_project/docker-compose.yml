@@ -1,0 +1,15 @@
+services:
+  rag:
+    build: .
+    container_name: rag-system
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data                       # edit documents without rebuilding
+      - hf_cache:/root/.cache/huggingface      # keep the embedding model between runs
+    restart: unless-stopped
+
+volumes:
+  hf_cache:

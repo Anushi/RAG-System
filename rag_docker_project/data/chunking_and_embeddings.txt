@@ -1,0 +1,7 @@
+Chunking and Embeddings
+
+Documents are usually too long to send to a language model in one piece, so they are split into chunks. If chunks are too small, they lose context. If chunks are too large, they contain unrelated material and make retrieval less precise. A common starting point is a few hundred words per chunk.
+
+Chunk overlap means that consecutive chunks share some text. Overlap prevents an important sentence from being cut in half at a chunk boundary, so that the idea is still fully present in at least one chunk. Too much overlap increases storage cost and creates near-duplicate results.
+
+An embedding is a list of numbers that represents the meaning of a piece of text. Texts with similar meaning have embeddings that are close together. The all-MiniLM-L6-v2 Sentence Transformers model produces 384-dimensional embeddings and runs quickly on a CPU. Retrieval ranks chunks by cosine similarity between the question embedding and each chunk embedding.

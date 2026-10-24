@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation (RAG) Basics
+
+Retrieval-Augmented Generation, or RAG, combines a search component with a language model. A language model on its own may not know the contents of a private document, and it may produce an answer that is not supported by any evidence. RAG reduces this problem by retrieving relevant passages first and then asking the model to answer using only those passages.
+
+The main stages of a RAG pipeline are: loading the source documents, extracting and cleaning the text, splitting the text into chunks, generating embeddings for each chunk, storing the embeddings in a vector index, converting the user's question into a query embedding, retrieving the most similar chunks, and generating an answer from the retrieved context.
+
+A good RAG prompt tells the model to answer only from the supplied context, to cite the passages it used, and to say that it does not know when the context is insufficient. This instruction is one of the simplest ways to reduce unsupported answers, often called hallucinations.

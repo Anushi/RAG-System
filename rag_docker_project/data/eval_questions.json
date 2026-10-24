@@ -1,0 +1,10 @@
+[
+  {"question": "What are the main stages of a RAG pipeline?", "expected_source": "rag_basics.txt"},
+  {"question": "How does a RAG system reduce hallucinations?", "expected_source": "rag_basics.txt"},
+  {"question": "What does chunk overlap do?", "expected_source": "chunking_and_embeddings.txt"},
+  {"question": "Which embedding model produces 384-dimensional vectors?", "expected_source": "chunking_and_embeddings.txt"},
+  {"question": "What does Precision@k measure?", "expected_source": "evaluation_metrics.txt"},
+  {"question": "What is faithfulness in RAG evaluation?", "expected_source": "evaluation_metrics.txt"},
+  {"question": "What are the Northstar Analytics support hours?", "expected_source": "northstar_analytics_support.txt"},
+  {"question": "Within how many days must refund requests be submitted?", "expected_source": "northstar_analytics_support.txt"}
+]
